@@ -1,0 +1,21 @@
+{
+    "name": "robson/app-rest-php",
+    "description": "Treino REST API em PHP",
+    "type": "project",
+    "require": {
+        "coffeecode/datalayer": "1.1.*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Robson Lucas",
+            "email": "robsonfariasAD@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload":{
+        "psr-4": {
+            "Source\\":"source/"
+        }
+    }
+}
