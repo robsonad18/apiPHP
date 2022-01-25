@@ -1,30 +1,25 @@
-<?php 
+<?php
 
 namespace Source\Controllers;
 
 use Source\Models\App\ApiUser;
 
-require __DIR__.'/../../vendor/autoload.php';
-require __DIR__.'/../Config.php';
+require __DIR__ . '/../../vendor/autoload.php';
+require __DIR__ . '/../Config.php';
 
-switch ($_SERVER['REQUEST_METHOD'])
-{
+switch ($_SERVER['REQUEST_METHOD']) {
     case 'POST':
         ApiUser::post();
-    break;
+        break;
     case 'GET':
         ApiUser::get();
-    break;
+        break;
     case 'PUT':
         ApiUser::put();
     case 'DELETE':
         ApiUser::delete();
-    break;   
+        break;
     default:
-    ApiUser::getDefault();
+        ApiUser::getDefault();
         break;
 }
-
-
-
-
